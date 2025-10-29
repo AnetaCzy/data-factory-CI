@@ -51,7 +51,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "users_001.csv",
 						"fileSystem": "container-01"
 					},
 					"columnDelimiter": ",",
@@ -156,7 +155,7 @@
 								"type": "DelimitedTextSource",
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
-									"recursive": true,
+									"fileListPath": "container-01/files_to_copy.txt",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
